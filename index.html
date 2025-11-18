@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Бесплатная диагностика систем автоматизации</title>
   <meta name="description" content="Бесплатная диагностика АСУТП, учёта и шкафов управления. Предотвратите простои и аварии.">
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" href="/assets/images/favicon.png" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/images/favicon.png" />
 </head>
@@ -16,13 +13,14 @@
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="/">
-       <img src="assets/images/logo.png" alt="Логотип" />
+        <img src="assets/images/logo.png" alt="Логотип" />
       </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Навигация">
         <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">☰</button>
         <ul class="nav-list" id="navList">
           <li><a href="#services">Услуги</a></li>
+          <li><a href="#results">Результат</a></li>
           <li><a href="#why">Почему важно</a></li>
           <li><a href="#systems">Системы</a></li>
           <li><a href="#contact">Контакты</a></li>
@@ -38,7 +36,7 @@
       <div class="wrap hero-inner">
         <div class="hero-text">
           <h1>Бесплатная диагностика систем автоматизации и учёта</h1>
-          <p class="lead">Предотвратите аварии и простои. Узнайте, в каком состоянии находится ваша система — инспекция занимает 1–2 часа и проводится бесплатно.</p>
+          <p class="lead">Предотвратите аварии и простои. Инспекция занимает 1–2 часа и проводится бесплатно — с отчётом и приоритетами работ.</p>
 
           <div class="hero-cta">
             <a class="btn btn-primary" href="#contact">Записаться на диагностику</a>
@@ -55,7 +53,7 @@
         </div>
 
         <div class="hero-media">
-          <img src="assets/images/hero.svg" alt="Диагностика оборудования">
+          <img src="assets/images/hero.svg" alt="Диагностика оборудования" />
         </div>
       </div>
     </section>
@@ -79,7 +77,7 @@
           </div>
           <div class="card">
             <h3>Резервные копии</h3>
-            <p>Снятие резервной копии программ контроллеров и сохранение на носитель.</p>
+            <p>Снимаем резервную копию программ контроллеров и сохраняем её по согласованию.</p>
           </div>
           <div class="card">
             <h3>Фотофиксация</h3>
@@ -93,12 +91,32 @@
       </div>
     </section>
 
+    <!-- RESULTS -->
+    <section id="results" class="section alt">
+      <div class="wrap">
+        <h2>Результат для заказчика — что вы получите</h2>
+
+        <ul class="results-list">
+          <li><strong>Полный фото- и технический отчёт</strong> — все найденные несоответствия с датой и привязкой к оборудованию.</li>
+          <li><strong>Резервные копии ПО контроллеров</strong> — сохранённые файлы прошивок/проектов на носителе по согласованию.</li>
+          <li><strong>Чек-лист с приоритетами</strong> — категоризация: срочно / важно / планово, с рекомендациями действий.</li>
+          <li><strong>Оценка риска и влияния</strong> — указано, где возможен простой и какие узлы критичны для производства.</li>
+          <li><strong>Практические рекомендации</strong> — конкретные шаги по устранению выявленных проблем и ориентировочные трудозатраты.</li>
+          <li><strong>Контрольный итог</strong> — вы получаете понятный документ, по которому можно планировать работы и бюджет.</li>
+        </ul>
+
+        <p style="margin-top:12px;color:#444">
+          Этот набор результатов даёт вам: ясную картину текущего состояния, срочные меры по снижению риска простоев и защищённые резервные копии ПО — всё, что нужно для принятия обоснованных решений.
+        </p>
+      </div>
+    </section>
+
     <!-- WHY -->
-    <section id="why" class="section alt">
+    <section id="why" class="section">
       <div class="wrap">
         <h2>Зачем это нужно вашему предприятию</h2>
         <ul class="benefits">
-          <li>Предотвращение отказов и остановка технологических процессов</li>
+          <li>Предотвращение отказов и остановки технологических процессов</li>
           <li>Устранение скрытых неисправностей</li>
           <li>Наличие актуальных резервных копий ПО</li>
           <li>Понимание текущего состояния системы и приоритетов улучшений</li>
@@ -108,7 +126,7 @@
     </section>
 
     <!-- SYSTEMS -->
-    <section id="systems" class="section">
+    <section id="systems" class="section alt">
       <div class="wrap">
         <h2>Какие системы мы обслуживаем</h2>
         <div class="systems-grid">
@@ -121,13 +139,13 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="section alt">
+    <section class="section">
       <div class="wrap">
         <h2>Как проходит диагностика</h2>
         <ol class="steps">
-          <li>Вы оставляете заявку — мы согласовываем время.</li>
-          <li>Прибываем на объект, проводим осмотр, проверку питания, связи и клемм.</li>
-          <li>Снимаем резервную копию ПО, делаем фотооборудования.</li>
+          <li>Вы оставляете заявку — мы согласовываем удобное время.</li>
+          <li>Прибываем на объект, проводим осмотр: питание, связь, клеммы, визуальный осмотр.</li>
+          <li>Снимаем резервные копии ПО, делаем фотоматериал и фиксируем наблюдения.</li>
           <li>Передаём отчёт с чек-листом и рекомендациями по приоритетам.</li>
         </ol>
       </div>
@@ -139,17 +157,17 @@
         <h2>Записаться на бесплатную диагностику</h2>
         <p>Оставьте контакты — мы свяжемся для согласования времени визита.</p>
 
-        <!-- Вариант 1: отправка через Formspree (оставлен ваш ID). 
-             Вариант 2: используйте mailto, если не хотите форму. -->
-        <form id="leadForm" action="https://formspree.io/f/mvglolyp" method="POST" class="form">
+        <form id="leadForm" action="https://formspree.io/f/mvglolyp" method="POST" class="form" novalidate>
           <input name="name" type="text" placeholder="Имя" required>
           <input name="phone" type="tel" placeholder="Телефон" required>
           <input name="email" type="email" placeholder="Email (необязательно)">
           <textarea name="message" rows="4" placeholder="Коротко о системе/задаче"></textarea>
+
           <div class="form-row">
             <button class="btn btn-primary" type="submit">Отправить заявку</button>
             <a class="btn btn-outline" href="mailto:info@cst.link">Написать на почту</a>
           </div>
+
           <p id="formMsg" class="form-msg" aria-live="polite"></p>
         </form>
 
@@ -167,8 +185,7 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
   <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-~
