@@ -15,7 +15,6 @@
       <a class="logo" href="/">
         <img src="assets/images/logo.png" alt="Логотип" />
       </a>
-
       <nav class="nav" aria-label="Навигация">
         <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">☰</button>
         <ul class="nav-list" id="navList">
@@ -34,7 +33,7 @@
     <!-- HERO -->
     <section class="hero">
       <div class="wrap hero-inner">
-        <div class="hero-text">
+        <div class="hero-text reveal">
           <h1>Бесплатная диагностика систем автоматизации и учёта</h1>
           <p class="lead">Предотвратите аварии и простои. Диагностика занимает 1–2 часа и проводится бесплатно — вы получаете отчёт и структурированный перечень задач с указанием срочности и значимости для работы оборудования.</p>
 
@@ -52,57 +51,52 @@
           <p class="note"><strong>Время диагностики:</strong> 1–2 часа</p>
         </div>
 
-       <div class="hero-media">
-  <!-- ваша основная иллюстрация -->
-  <img src="assets/images/hero.svg" alt="Диагностика оборудования" />
-
-  <!-- декоративные SVG (шестерёнки) — inline -->
-  <svg class="gear gear-1" viewBox="0 0 100 100" aria-hidden="true">
-    <g transform="translate(50,50)">
-      <circle r="20" fill="none" stroke="rgba(175,33,61,0.12)" stroke-width="3"/>
-      <path d="M-30 0 L-22 8 L-12 6 L-6 16 L6 16 L12 6 L22 8 L30 0 L22 -8 L12 -6 L6 -16 L-6 -16 L-12 -6 L-22 -8 Z"
-            fill="rgba(175,33,61,0.06)"></path>
-    </g>
-  </svg>
-
-  <svg class="gear gear-2" viewBox="0 0 100 100" aria-hidden="true">
-    <g transform="translate(50,50)">
-      <circle r="14" fill="none" stroke="rgba(11,116,222,0.10)" stroke-width="2"/>
-      <path d="M-22 0 L-16 6 L-8 4 L-4 12 L4 12 L8 4 L16 6 L22 0 L16 -6 L8 -4 L4 -12 L-4 -12 L-8 -4 L-16 -6 Z"
-            fill="rgba(11,116,222,0.04)"></path>
-    </g>
-  </svg>
-</div>
-
+        <div class="hero-media reveal">
+          <img src="assets/images/hero.svg" alt="Диагностика оборудования" />
+          <svg class="gear gear-1" viewBox="0 0 100 100" aria-hidden="true">
+            <g transform="translate(50,50)">
+              <circle r="20" fill="none" stroke="rgba(175,33,61,0.12)" stroke-width="3"/>
+              <path d="M-30 0 L-22 8 L-12 6 L-6 16 L6 16 L12 6 L22 8 L30 0 L22 -8 L12 -6 L6 -16 L-6 -16 L-12 -6 L-22 -8 Z"
+                    fill="rgba(175,33,61,0.06)"></path>
+            </g>
+          </svg>
+          <svg class="gear gear-2" viewBox="0 0 100 100" aria-hidden="true">
+            <g transform="translate(50,50)">
+              <circle r="14" fill="none" stroke="rgba(11,116,222,0.10)" stroke-width="2"/>
+              <path d="M-22 0 L-16 6 L-8 4 L-4 12 L4 12 L8 4 L16 6 L22 0 L16 -6 L8 -4 L4 -12 L-4 -12 L-8 -4 L-16 -6 Z"
+                    fill="rgba(11,116,222,0.04)"></path>
+            </g>
+          </svg>
+        </div>
       </div>
     </section>
 
     <!-- WHAT WE DO / SERVICES -->
-    <section id="services" class="section">
+    <section id="services" class="section alt">
       <div class="wrap">
-        <h2>Что мы делаем бесплатно</h2>
+        <h2 class="reveal">Что мы делаем бесплатно</h2>
         <div class="cards">
-          <div class="card">
+          <div class="card reveal">
             <h3>Очистка и осмотр</h3>
             <p>Визуальный осмотр шкафов и контроллеров, удаление пыли и мусора.</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <h3>Клеммные соединения</h3>
             <p>Проверка и подтяжка клеммных зажимов для стабильной работы.</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <h3>Питание и связь</h3>
             <p>Проверка доступности питания и устойчивости связи.</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <h3>Резервные копии</h3>
             <p>Снятие резервных копий программного обеспечения контроллеров (ПЛК) и сохранение их по согласованию.</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <h3>Фотофиксация</h3>
             <p>Фиксация состояния оборудования в фотоотчёте.</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <h3>Отчёт и рекомендации</h3>
             <p>Чек-лист и рекомендации по дальнейшим действиям для снижения рисков.</p>
           </div>
@@ -111,33 +105,25 @@
     </section>
 
     <!-- RESULTS -->
-    <section id="results" class="section alt">
-      <div class="wrap">
+    <section id="results" class="section">
+      <div class="wrap reveal">
         <h2>Результат — что вы получите</h2>
-
         <p>По итогам диагностики вы получаете готовый рабочий пакет документов и материалов, который позволяет оценить риски и планировать работы.</p>
-
         <ul class="results-list">
           <li><strong>Понятный фото- и технический отчёт.</strong> Все замечания с точной привязкой к оборудованию, времени и месту обследования — отчёт готов к передаче подрядчикам.</li>
-
           <li><strong>Резервные копии программного обеспечения контроллеров (ПЛК).</strong> Актуальные экспортированные проекты/прошивки, записанные на согласованный носитель и сохранённые для восстановления.</li>
-
           <li><strong>Чек-лист с приоритетами.</strong> Структурированный перечень задач с указанием срочности и значимости для работы оборудования: «Срочно / Важно / Планово» с рекомендациями и ориентировочными сроками.</li>
-
-          <li><strong>Оценка рисков и влияния на производство.</strong> Где возможен простой, какие узлы критичны и какие последствия это может вызвать для технологического процесса.</li>
-
+          <li><strong>Оценка рисков и влияния на производство.</strong> Где возможен простой, какие узлы критичны и последствия для технологического процесса.</li>
           <li><strong>Пошаговые практические рекомендации.</strong> Конкретные действия, порядок работ и ориентировочные трудозатраты для каждой задачи.</li>
-
           <li><strong>Документ для принятия решений.</strong> Сводный итог с приоритетами и ориентировочными бюджетными позициями для согласования работ и закупок.</li>
         </ul>
-
         <p style="margin-top:12px;color:#444">Результат позволяет быстро понять текущее состояние системы, снизить вероятность аварий и простоев, а также обосновать и запланировать необходимые работы — вы получаете инструмент для принятия управленческих решений.</p>
       </div>
     </section>
 
     <!-- WHY -->
-    <section id="why" class="section">
-      <div class="wrap">
+    <section id="why" class="section alt">
+      <div class="wrap reveal">
         <h2>Зачем это нужно вашему предприятию</h2>
         <ul class="benefits">
           <li>Предотвращение отказов и остановки технологических процессов.</li>
@@ -150,21 +136,21 @@
     </section>
 
     <!-- SYSTEMS -->
-    <section id="systems" class="section alt">
-      <div class="wrap">
+    <section id="systems" class="section">
+      <div class="wrap reveal">
         <h2>Какие системы мы обслуживаем</h2>
         <div class="systems-grid">
-          <div class="system">АСУТП, шкафы управления</div>
-          <div class="system">Системы технического и коммерческого учёта</div>
-          <div class="system">Промышленные контроллеры</div>
-          <div class="system">Шкафы связи и телеметрии</div>
+          <div class="system reveal">АСУТП, шкафы управления</div>
+          <div class="system reveal">Системы технического и коммерческого учёта</div>
+          <div class="system reveal">Промышленные контроллеры</div>
+          <div class="system reveal">Шкафы связи и телеметрии</div>
         </div>
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="section">
-      <div class="wrap">
+    <section class="section alt">
+      <div class="wrap reveal">
         <h2>Как проходит диагностика</h2>
         <ol class="steps">
           <li>Вы оставляете заявку — мы согласовываем удобное время.</li>
@@ -176,7 +162,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section contact-section reveal">
       <div class="wrap narrow">
         <h2>Записаться на бесплатную диагностику</h2>
         <p>Оставьте контакты — мы свяжемся для согласования времени визита.</p>
