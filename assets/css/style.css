@@ -1,35 +1,62 @@
 /* Cards / Services */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
-.card{
-  background:#fff;
-  padding:16px;
-  border-radius:10px;
-  border:1px solid #eee;
-  transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s;
-  will-change: transform, box-shadow;
-  text-align:left; /* сохраняем выравнивание */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
 }
-.card:hover{
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  text-align: left;
+  transition: transform 0.28s cubic-bezier(.2,.8,.2,1), box-shadow 0.28s;
+  will-change: transform, box-shadow;
+  position: relative;
+}
+.card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(12,20,30,0.08);
+  box-shadow: 0 14px 30px rgba(12, 20, 30, 0.08);
 }
 
 /* Systems */
-.systems-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
-.system{
-  background:#fff;
-  padding:12px;
-  border-radius:8px;
-  border:1px solid #eee;
-  text-align:center;
-  transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s;
-  will-change: transform, box-shadow;
+.systems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
 }
-.system:hover{
+.system {
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  text-align: center;
+  transition: transform 0.28s cubic-bezier(.2,.8,.2,1), box-shadow 0.28s;
+  will-change: transform, box-shadow;
+  position: relative;
+}
+.system:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(12,20,30,0.08);
+  box-shadow: 0 14px 30px rgba(12, 20, 30, 0.08);
 }
 
 /* Reveal on scroll */
-.reveal{opacity:0; transform: translateY(10px); transition: opacity .6s ease-out, transform .6s ease-out; will-change: transform, opacity;}
-.reveal.visible{opacity:1; transform: translateY(0);}
+.reveal {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: transform, opacity;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .card:hover,
+  .system:hover { transform: none; }
+  .reveal { transition: none; transform: none; opacity: 1; }
+}
