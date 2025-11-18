@@ -37,3 +37,8 @@ permalink: /
   <button type="submit" style="padding:10px 16px;border-radius:8px;background:#0b74de;color:#fff;border:none">Отправить</button>
 </form>
 </section>
+<p>
+  <a href="https://cst.link/" target="_blank" style="display:inline-block;padding:12px 18px;border-radius:8px;background:#0b74de;color:#fff;text-decoration:none">
+    О нас
+  </a>
+</p>
