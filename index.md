@@ -17,7 +17,7 @@ permalink: /
   </div>
 
   <div style="flex:0 1 420px;text-align:center">
-    <img src="/assets/hero.jpg" alt="Демонстрация сервиса" style="max-width:100%;border-radius:12px">
+    <img src="assets/-1.svg" alt="Демонстрация сервиса" style="max-width:100%;border-radius:12px">
   </div>
 </div>
 </section>
