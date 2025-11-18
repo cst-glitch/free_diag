@@ -1,7 +1,10 @@
 ---
 title: "Бесплатная диагностика систем автоматизации"
+layout: page
 permalink: /
 ---
+
+<div style="padding-bottom:140px;">
 
 <!-- HERO -->
 <section style="padding:36px 0;background:#fff;">
@@ -91,7 +94,6 @@ permalink: /
     <h2 style="margin:0 0 12px;color:#111">Записаться на бесплатную диагностику</h2>
     <p style="margin:0 0 12px;color:#444">Оставьте свои контакты, и мы свяжемся с вами для согласования времени.</p>
 
-    <!-- Простая форма для сбора контактов -->
     <form action="https://formspree.io/f/mvglolyp" method="POST" style="display:flex;flex-direction:column;gap:8px">
       <input name="name" type="text" placeholder="Имя" required style="padding:10px;border:1px solid #ddd;border-radius:8px">
       <input name="phone" type="tel" placeholder="Телефон" required style="padding:10px;border:1px solid #ddd;border-radius:8px">
@@ -102,15 +104,7 @@ permalink: /
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer style="padding:24px 0;background:#fff;border-top:1px solid #f0f0f0">
-  <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-    <div style="color:#666;font-size:14px">© <span id="yr"></span> Ваша компания</div>
-    <div style="display:flex;gap:12px;align-items:center">
-      <a href="https://cst.link/" target="_blank" rel="noopener" style="color:#af213d;text-decoration:none;font-weight:600">О нас</a>
-      <a href="tel:+70000000000" style="color:#666;text-decoration:none">+7 (000) 000-00-00</a>
-    </div>
-  </div>
-</footer>
+</div>
 
+<!-- Footer темы Minimal -->
 <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
