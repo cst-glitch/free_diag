@@ -29,7 +29,7 @@ permalink: /
 
 <section id="contact" style="padding-top:18px;">
 ### Оставьте заявку
-<form action="https://formspree.io/f/YOUR_ID" method="POST" style="max-width:520px">
+<form action="https://formspree.io/f/mvglolyp" method="POST" style="max-width:520px">
   <input name="name" type="text" placeholder="Имя" required style="width:100%;padding:10px;margin-bottom:8px">
   <input name="phone" type="tel" placeholder="Телефон" required style="width:100%;padding:10px;margin-bottom:8px">
   <input name="email" type="email" placeholder="Email" style="width:100%;padding:10px;margin-bottom:8px">
