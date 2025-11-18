@@ -74,6 +74,6 @@ img{max-width:100%;display:block}
   .hero h1{font-size:24px}
   .nav-toggle{display:inline-block}
   .nav-list{position:absolute;right:0;top:56px;background:#fff;border:1px solid #eee;padding:12px;border-radius:8px;display:none;flex-direction:column;min-width:200px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
-  .nav-list.show{display:flex}
+  .nav-list.show{display:flex} 
 }
 
