@@ -37,7 +37,7 @@ img{max-width:100%;display:block}
 .note{margin-top:12px;color:var(--muted)}
 
 /* Buttons */
-.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;cursor:pointer;text-align:center}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;cursor:pointer;text-align:center;font-size:15px;line-height:1.2}
 .btn-primary{background:var(--accent);color:#fff;border:1px solid var(--accent)}
 .btn-primary:hover{background:var(--accent-dark)}
 .btn-outline{background:#fff;color:var(--accent);border:1px solid var(--accent)}
@@ -68,31 +68,26 @@ img{max-width:100%;display:block}
 .form-row{display:flex;gap:12px;align-items:center;margin-top:6px}
 
 /* ---- Новые правила для кнопок в строке формы ----
-   Поведение:
-   - Отправить (кнопка) и Написать (ссылка) — одинаковой ширины;
-   - Политика — занимает оставшееся пространство;
-   - На мобильных экранах все три — блоки 100% ширины.
+   - Все три кнопки имеют единый размер шрифта (15px).
+   - Первая (submit) и вторая (mail) — фиксированной, одинаковой минимальной ширины.
+   - Третья (policy) растягивается на оставшееся место; текст переносится по словам.
 */
-.form-row .btn{flex: 0 0 auto; white-space:nowrap}
+.form-row .btn{font-size:15px;padding:10px 14px;box-sizing:border-box;white-space:normal}
 .form-row .btn-primary,
-.form-row .btn-mail {
-  /* фиксированная (равная) ширина у первой и второй кнопок */
-  min-width: 170px;
-  padding: 10px 14px;
-  box-sizing: border-box;
+.form-row .btn-mail{
+  min-width: 200px;          /* увеличено, чтобы кнопки одинакового размера */
+  flex: 0 0 auto;
+  text-align:center;
 }
-
-/* третья кнопка растягивается на оставшееся место */
-.form-row .btn-policy {
+.form-row .btn-policy{
   flex: 1 1 auto;
-  padding: 10px 14px;
   min-width: 0;
-  text-align: center;
-  box-sizing: border-box;
+  padding: 10px 12px;
+  text-align:center;
+  white-space:normal;        /* позволяет перенос слов */
+  line-height:1.1;
+  font-size:15px;
 }
-
-/* визуальная мелочь: одинаковая высота (если разные padding в .btn) */
-.form-row .btn, .form-row a.btn {height: auto;}
 
 /* сообщение формы */
 .form-msg{color:var(--muted);margin-top:8px}
