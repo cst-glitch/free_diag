@@ -37,16 +37,14 @@ img{max-width:100%;display:block}
 .note{margin-top:12px;color:var(--muted)}
 
 /* Buttons */
-.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;cursor:pointer;text-align:center;font-size:15px;line-height:1.2}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;cursor:pointer}
 .btn-primary{background:var(--accent);color:#fff;border:1px solid var(--accent)}
 .btn-primary:hover{background:var(--accent-dark)}
 .btn-outline{background:#fff;color:var(--accent);border:1px solid var(--accent)}
 
-/* Sections */
+/* Cards */
 .section{padding:36px 0}
 .section.alt{background:#fafafa}
-
-/* Cards */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
 .card{background:#fff;padding:16px;border-radius:var(--radius);border:1px solid #eee;transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s;will-change: transform, box-shadow;}
 .card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(12,20,30,0.08);}
@@ -65,46 +63,47 @@ img{max-width:100%;display:block}
 /* Contact / form */
 .contact-section .form{display:flex;flex-direction:column;gap:10px;margin-top:10px}
 .contact-section input, .contact-section textarea{padding:12px;border:1px solid #ddd;border-radius:8px}
-.form-row{display:flex;gap:12px;align-items:center;margin-top:6px}
 
-/* ---- Новые правила для кнопок в строке формы ----
-   - Все три кнопки имеют единый размер шрифта (15px).
-   - Первая (submit) и вторая (mail) — фиксированной, одинаковой минимальной ширины.
-   - Третья (policy) растягивается на оставшееся место; текст переносится по словам.
-*/
-.form-row .btn{font-size:15px;padding:10px 14px;box-sizing:border-box;white-space:normal}
+/* Форма кнопок: одинаковая высота и шрифт */
+.form-row {
+  display:flex;
+  gap:12px;
+  align-items:stretch;
+  margin-top:6px;
+}
+
+.form-row .btn {
+  font-size:15px;
+  padding:10px 14px;
+  box-sizing:border-box;
+  white-space:normal;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+/* Первая и вторая кнопки фиксированной ширины */
 .form-row .btn-primary,
 .form-row .btn-mail{
-  min-width: 200px;          /* увеличено, чтобы кнопки одинакового размера */
+  min-width:200px;
   flex: 0 0 auto;
-  text-align:center;
-}
-.form-row .btn-policy{
-  flex: 1 1 auto;
-  min-width: 0;
-  padding: 10px 12px;
-  text-align:center;
-  white-space:normal;        /* позволяет перенос слов */
-  line-height:1.1;
-  font-size:15px;
 }
 
-/* сообщение формы */
-.form-msg{color:var(--muted);margin-top:8px}
+/* Третья кнопка растягивается на оставшееся место */
+.form-row .btn-policy{
+  flex: 1 1 auto;
+  min-width:0;
+  padding:10px 12px;
+  line-height:1.1;
+}
 
 /* Footer */
 .site-footer{border-top:1px solid #f0f0f0;background:#fff;padding:18px 0;margin-top:28px}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .footer-contacts a{margin-left:12px;color:var(--muted);text-decoration:none}
 
-/* Responsive: на экранах < 720px — кнопки в колонку, полный width */
-@media (max-width:720px){
-  .form-row{flex-direction:column;align-items:stretch}
-  .form-row .btn{width:100%;min-width:0}
-  .form-row .btn-policy{order:3}
-}
-
-/* Responsive общий */
+/* Responsive */
 @media(max-width:900px){
   .hero h1{font-size:24px}
   .nav-toggle{display:inline-block}
